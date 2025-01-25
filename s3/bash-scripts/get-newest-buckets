@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+#When you want to see the newest buckets use this below command
+
+echo "== list newest bucket"
+
+aws s3api list-buckets --output json | jq -r '.Buckets | sort_by(.CreationDate) | reverse | .[0] | .Name'

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+echo "== create bucket"
+
+#Check for Bucket Name
+if [[ -z "$1" ]]; then
+    echo "There needs to be a bucket name eg. ./bucket my-bucket-name"
+else
+    echo "Input is: $1"
+fi
+
+BUCKET_NAME = $1

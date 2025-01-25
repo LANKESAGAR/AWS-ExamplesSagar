@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+echo "== put object"
+
+# Check for bucket name
+if [[ -z "$1" ]]; then
+    echo "There needs to be a bucket name eg. ./put-object my-bucket-name"
+    exit 1
+else
+    echo "Bucket name is: $1"
+fi
+
+# Check for filename
+if [[ -z "$2" ]]; then
+    echo "There needs to be a file path eg. ./put-object my-bucket-name /path/to/file"
+    exit 1
+else
+    echo "File to upload is: $2"
+fi
+
+BUCKET_NAME=$1
+FILENAME=$2
+
+# Check if the file exists
+if [[ ! -f "$FILENAME" ]]; then
+    echo "The file $FILENAME does not exist."
+    exit 1
+fi
+
+OBJECT_KEY=$(basename "$FILENAME")
+
+# Upload the file to S3
+aws s3api put-object \
+    --bucket $BUCKET_NAME \
+    --body $FILENAME \
+    --key $OBJECT_KEY
+
+echo "File $FILENAME has been uploaded to s3://$BUCKET_NAME/$OBJECT_KEY"
