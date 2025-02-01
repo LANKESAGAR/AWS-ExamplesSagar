@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: A Simple S3 Bucket using CFN.
+Resources:
+  S3Bucket:
+    #https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-bucket.html
+    Type: 'AWS::S3::Bucket'
+    #We don't need supply a Bucket Name as AWS will genearate a random name for use
+    DeletionPolicy: Retain
+    Properties:
+      BucketName: my-unique-bucket-name-12345
