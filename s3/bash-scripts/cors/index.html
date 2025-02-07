@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Django Reader</title>
+    <link rel="icon" href="/favicon-django.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Cookie&family=REM:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="logo" alt="Jovian Logo" src="https://imgur.com/JRA5Q8a.png">
+        <img id="logo-with-text" alt="Jovian Logo With Text" src="https://i.imgur.com/m1wXjqw.png">
+    </div>
+    <img id="banner" src="Banner.jpg" alt="Learn Banner">
+    <h1>About Django</h1>
+
+    <div id="about">
+        <div id="description">
+            <p style="margin-top: 0px;">
+                Django is a high-level Python web framework that encourages rapid development and clean,
+                pragmatic design. It provides a robust set of tools and features to facilitate the creation of web
+                applications,
+                emphasizing reusability and the principle of "don't repeat yourself.
+                "With its built-in admin interface and strong community support, Django simplifies the development
+                process while ensuring scalability and security.
+            </p>
+            <p>
+                Django framework is a high-level web development framework that encourages rapid development and clean,
+                pragmatic design.
+            <ol>
+                <li>
+                    <a href="https://jovian.com/learn/web-development-with-python-and-flask">Django Web Development with
+                        Python Bootcamp</a>
+                </li>
+                <li>
+                    <a href="https://jovian.com/learn/data-analysis-with-python-zero-to-pandas">Django Data Analysis
+                        Bootcamp</a>
+                </li>
+            </ol>
+            </p>
+        </div>
+        <div id="team">
+            <img id="teamimage" alt="Team" src="Team.jpg">
+        </div>
+    </div>
+
+    <h2>Job Opportunities</h2>
+
+    <div id="jobs">
+        <div id="jobs-list">
+            <div class="job">
+                <div class="job-title">Frontend Developer</div>
+                <div class="job-detail">Bengaluru, India</div>
+                <div class="job-detail">₹ 12,00,000</div>
+                <div class="job-detail">Posted Mar 3, 2023</div>
+            </div>
+            <div class="job">
+                <div class="job-title">Full Stack Developer</div>
+                <div class="job-detail">New Delhi, India</div>
+                <div class="job-detail">₹ 15,00,000</div>
+                <div class="job-detail">Posted Feb 1, 2023</div>
+            </div>
+            <div class="job">
+                <div class="job-title">Data Scientist</div>
+                <div class="job-detail">San Francisco, USA</div>
+                <div class="job-detail">$175,000</div>
+                <div class="job-detail">Posted Dec 22, 2022</div>
+            </div>
+            <div class="job">
+                <div class="job-title">ML Engineer</div>
+                <div class="job-detail">Remote</div>
+                <div class="job-detail">$80,000</div>
+                <div class="job-detail">Posted Sep 19, 2022</div>
+            </div>
+        </div>
+
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted On</th>
+            </tr>
+            <tr class="jobs-header-row">
+                <th>City</th>
+                <th>State</th>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Frontend Developer</td>
+                <td>Boston</td>
+                <td>MA</td>
+                <td>$180K</td>
+                <td>Dec 12, 2024</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Backend Developer</td>
+                <td>Dallas</td>
+                <td>TX</td>
+                <td>$680K</td>
+                <td>Mar 10, 2024</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Full Stack Developer</td>
+                <td>Nashua</td>
+                <td>NH</td>
+                <td>$120K</td>
+                <td>Aug 13, 2024</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>AWS Developer</td>
+                <td>McKinney</td>
+                <td>TX</td>
+                <!-- <td colspan="2">REMOTE</td> -->
+                <!-- <td>TX</td> -->
+                <td>$150K</td>
+                <td>Dec 25, 2024</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div id="application">
+        <h2>Submit Your Application</h2>
+        <form id="application-form" action="https://formbold.com/s/3Orwk" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="Full Name" required placeholder="LANKE SAGAR">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="Email Address" required placeholder="lankesagar85@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="+1 (913) 713-8080">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label>Position Applied for</label><br>
+                <select id="position" name="Position Applied" required>
+                    <option value="">Select Postion</option>
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="backend">Backend Developer</option>
+                    <option value="full stack developer">Full Stack Developer</option>
+                    <option value="aws developer">AWS Developer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Resume</label><br>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="coverletter">Cover Letter</label><br>
+                <textarea id="coverletter" name="coverletter" rows="5"
+                    placeholder="Explain what brings you here to apply this postion..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required> I agree to the terms and conditions
+                </label>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit Application">
+            </div>
+
+        </form>
+    </div>
+
+
+    <div id="footer">
+        <ul id="footer-links">
+            <li>
+                <a href="https://jovian.com/learn" target="_blank">Learn</a>
+            </li>
+            <li>
+                <a href="https://jovian.com/learn" target="_blank">Programs</a>
+            </li>
+            <li>
+                <a href="https://youtube.com" target="_blank">YouTube</a>
+            </li>
+        </ul>
+        <span class="copyright">© 2024 Django</span>
+    </div>
+    <script type="text/javascript">
+        var xhr = new XMLHttpRequest();
+        var url = "https://71yzjssc7j.execute-api.us-east-1.amazonaws.com/prod/hello";
+
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                console.log("Response Status:", xhr.status);
+                console.log("Response Body:", xhr.responseText);
+            }
+        };
+
+        var data = JSON.stringify({
+            key1: "value1",
+            key2: "value2"
+        });
+
+        xhr.send(data);
+
+    </script>
+</body>
+
+</html>
